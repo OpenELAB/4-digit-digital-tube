@@ -1,42 +1,42 @@
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;__Hi👋__,欢迎来到使用 Arduino UNO 和 4 位数码管制作迷你计数器项目的教程！在本项目中，我们将通过简单的硬件连接和代码实现4位数码管的正向计时显示。通过几个步骤轻松实现，让我们开始吧🚀！  
-- 📝 项目简介
-- ✨ 功能特点
-- 🏗 项目结构
-- 🚀 安装与运行
-- 🔧 使用说明  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;__Hi👋__,Welcome to the tutorial on making a mini counter project using an Arduino UNO and a 4-digit digital tube! In this project, we will implement a forward timing display for a 4-bit digital tube with simple hardware connections and code. It's easy to implement in a few steps, so let's get started 🚀!
+- 📝 Project Profile
+- ✨ Functional Features
+- 🏗 Project structure
+- 🚀 Installation and operation
+- 🔧 Instructions for use 
 # 4 digit digital tube
-## 项目简介
-4位数码管是一种电子显示设备，通过Arduino UNO控制来显示四位数字（从个位到千位）。数码管的工作原理基于7段LED灯，可以独立控制每个数字的显示。  
-## 功能特点
-- 📏 清晰显示：可以同时显示4位数字，显示效果清晰。
-- 🎮 高效控制：通过Arduino UNO实现精准控制。
-- ⚙️ 易于操作：适合初学者，简单的硬件连接和代码。
-- 🔋 低功耗：适合长时间运行，耗电量较低。
-## 项目结构
+## Project Profile
+A 4-digit digital tube is an electronic display device that is controlled by an Arduino UNO to display four digits (from digits to thousands). The working principle of the digital tube is based on 7-segment LEDs that can control the display of each digit independently.  
+## Functional Features
+- 📏 Clear display: 4 digits can be displayed at the same time with clear display.  
+- 🎮 Efficient control: precise control through Arduino UNO.  
+- ⚙️ Easy to operate: suitable for beginners, simple hardware connection and code.  
+- 🔋 Low Power Consumption: Suitable for long time operation with low power consumption.  
+## Project structure
 ```
-│── README.md：项目的详细说明文档。
-│── Number_Cube：项目核心代码文件，控制4位数码管的显示。
+│── README.md：Detailed description document for the project.
+│── Number_Cube：Project core code file that controls the display of a 4-digit digital tube.
 ```
-## 安装与运行步骤
-### 材料准备：
-- Arduino UNO：用于控制数码管的核心微控制器。  
-- 4位数码管：用于显示四位数字。  
-- 面包板：用于电路连接。  
-- 公对公杜邦线：用于硬件连接。  
-- USB数据线：用于连接Arduino和电脑。  
-### 接线说明：
-- a、b、c、d、e、f、g、dp：这些引脚分别控制数码管的七段显示部分和小数点显示。  
-- 1、2、3、4：这四个引脚分别控制数码管的个位、十位、百位和千位显示。  
-- 接线时，请参考下图，将数码管的各个引脚与Arduino UNO对应的引脚连接起来。
+## Installation and operation steps
+### Material Preparation:
+- Arduino UNO: The core microcontroller used to control the digital tube.  
+- 4-digit digital tube: used to display four digits.  
+- Breadboard: for circuit connections.  
+- Male-to-male DuPont cable: for hardware connections. 
+- USB cable: for connecting Arduino and computer.
+### Wiring Instructions:
+- a, b, c, d, e, f, g, dp: These pins control the seven-segment display portion of the digital tube and the decimal point display, respectively.    
+- 1, 2, 3, 4: These four pins control the digit, tens, hundreds and thousands display of the digital tube respectively.    
+- When wiring, please refer to the following diagram to connect each pin of the digital tube to the corresponding pin of the Arduino UNO.
 ![image](https://github.com/user-attachments/assets/afbe0836-be92-42f0-966f-53135039ed15)
-### 代码运行：
-1、使用USB数据线将Arduino UNO连接到电脑。  
-2、在Arduino IDE中打开 Number_Cube.ino 文件。  
-3、选择正确的开发板和端口：点击 Tools -> Board -> Arduino UNO，再点击 Tools -> Port，选择正确的端口。  
-4、点击编译并上传代码到Arduino UNO。  
+### The code runs:
+1、Connect the Arduino UNO to the computer using the USB cable.   
+2、Open the Number_Cube.ino file in the Arduino IDE.   
+3、Select the correct development board and port: Click Tools -> Board -> Arduino UNO, then click Tools -> Port to select the correct port.    
+4、Click Compile and upload the code to the Arduino UNO.   
 ![image](https://github.com/user-attachments/assets/cd520298-7eda-4f9b-bce8-398e393a2805)  
 
-## 使用说明
-1、通过调整代码中的定时器和延时设置，你可以自定义数码管的显示速度。  
-2、项目默认实现的是正向计时，即从0开始逐渐计时显示。你也可以根据需求修改代码，添加倒计时或其他显示功能。  
-3、若使用共阴极数码管，只需在代码中更改相应的逻辑控制，确保正确显示。  
+## Instructions for use
+1、By adjusting the timer and delay settings in the code, you can customize the display speed of the digital tube.  
+2、The default implementation of the project is forward timing, i.e., gradually starting from 0 to display the timing. You can also modify the code to add countdown or other display functions according to your needs.  
+3、If a common cathode digital tube is used, simply change the appropriate logic control in the code to ensure correct display.  
